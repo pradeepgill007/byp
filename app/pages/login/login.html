@@ -1,0 +1,49 @@
+<ion-navbar *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="title_color">Login</ion-title>
+</ion-navbar>
+<ion-content padding class="login_signup_main_bg">
+
+    <ion-row text-center>
+        <ion-col class="logo">
+            <img src="../img/logo.png">
+        </ion-col>
+    </ion-row>
+
+    <form class="wrapper_form">
+        <ion-list no-lines class="no_margin_bottom">
+            <ion-item>
+                <ion-input type="text" placeholder="Username" [(ngModel)]="email"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+            </ion-item>
+        </ion-list>
+        <ion-row no-padding>
+            <ion-col class="login_signup" no-padding text-left (click)="signUp()">Sign Up User</ion-col>
+            <ion-col class="login_signup" l no-padding text-right (click)="vendorSignUp()">Sign Up Vendor</ion-col>
+        </ion-row>
+        <ion-row no-padding>
+            <ion-col no-padding>
+                <button class="login_button login_button_margin_bottom" block type="submit" (click)="login()">Login
+                </button>
+            </ion-col>
+        </ion-row>
+    </form>
+
+    <ion-row text-center>
+        <ion-col class="or_login_text">
+            -- OR --
+        </ion-col>
+    </ion-row>
+
+    <ion-row no-padding>
+        <ion-col no-padding>
+            <button block class="facebook_login">LOGIN WITH FACEBOOK</button>
+        </ion-col>
+    </ion-row>
+
+
+</ion-content>

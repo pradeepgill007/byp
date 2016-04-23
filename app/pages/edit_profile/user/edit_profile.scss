@@ -1,0 +1,14 @@
+.slider_image_wrapper{
+  .item{
+    padding-left: 2px;
+    .item-inner{
+      padding-right: 0px;
+      ion-avatar[item-left]{
+        margin:0px 6px 0px 0px;
+      }
+    }
+  }
+}
+.add_new_pet{
+  margin-bottom: 22px;
+}

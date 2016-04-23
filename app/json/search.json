@@ -1,0 +1,150 @@
+{
+  "success": true,
+  "messages": "Vendor List",
+  "response_code": 200,
+  "response": [
+    {
+      "vendor_id": "20",
+      "vendor_name": "Test Buzz",
+      "vendor_image": "http://104.131.117.45/img/profile/vendor/vendor_8ec19a763e8ff12b3b69bd510ec838ca.jpg",
+      "address": "1863 19th Ave,test street",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94122",
+      "vendor_avg_rating": "4.0000",
+      "vendor_desc": "Automated script (rake Task) to get the data from DOL for block listed companies.\r\nUsed Google Maps Api, Geocode Api && custom Javascript for markers  handling and popups.\r\nSearch capability based on state and company name.\t\r\nDeployed application to heroku.in\r\nApplied Bootstrap css framework for UI.Automated script (rake Task) to get the data from DOL for block listed companies.\r\nUsed Google Maps Api, Geocode Api && custom Javascript for markers  handling and popups."
+    },
+    {
+      "vendor_id": "101",
+      "vendor_name": "Pepe's Beauty Shop",
+      "vendor_image": "http://104.131.117.45/img/profile/vendor/ef20578a436ad52e4db05ca2e1f06a37.jpg",
+      "address": "300 Embarcadero Street ",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94110",
+      "vendor_avg_rating": null,
+      "vendor_desc": "At Pepe's we love pampering our customers'. We have been in business for 10 years and plan on being here for much longer. "
+    },
+    {
+      "vendor_id": "116",
+      "vendor_name": "BYP",
+      "vendor_image": "http://104.131.117.45/img/profile/vendor/vendor_77d77b6d9a1cdb82e72104109fd8ea37.png",
+      "address": "1861 19th Ave,fff",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94105",
+      "vendor_avg_rating": null,
+      "vendor_desc": "sonam gzhhzhschjjvch"
+    },
+    {
+      "vendor_id": "122",
+      "vendor_name": "David business",
+      "vendor_image": "",
+      "address": "My first street gurgaon,My second street haryana",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94117",
+      "vendor_avg_rating": null,
+      "vendor_desc": "lorem ipsum is the dummy text lorem ipsum is the dummy text lorem ipsum is the dummy text lorem ipsum is the dummy text lorem ipsum is the dummy textlorem ipsum is the dummy text"
+    },
+    {
+      "vendor_id": "282",
+      "vendor_name": "gurinder",
+      "vendor_image": "http://104.131.117.45/img/profile/vendor/vendor_312e93f18e80d79f2fff7b7d3b8fd6c6.png",
+      "address": "gurinder,gurinder",
+      "city": "gurinder",
+      "state": "hr",
+      "zip": "234345",
+      "vendor_avg_rating": null,
+      "vendor_desc": "gurinder Desc"
+    },
+    {
+      "vendor_id": "367",
+      "vendor_name": "vendor vendor",
+      "vendor_image": "",
+      "address": "vendor,vendor",
+      "city": "Singaporesdfasdfdf",
+      "state": "KY",
+      "zip": "599595",
+      "vendor_avg_rating": null,
+      "vendor_desc": "vendor"
+    },
+    {
+      "vendor_id": "386",
+      "vendor_name": "help",
+      "vendor_image": "http://104.131.117.45/img/profile/vendor/vendor_a519d3c07b7f4b78de889794ab6f9789.png",
+      "address": "vbbb,ghh",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94105",
+      "vendor_avg_rating": null,
+      "vendor_desc": "Pet care"
+    },
+    {
+      "vendor_id": "389",
+      "vendor_name": "helping",
+      "vendor_image": "http://104.131.117.45/img/profile/vendor/vendor_408fa5bf232641f7f366d8d08a1abc64.png",
+      "address": "346,ud",
+      "city": "Sammamish",
+      "state": "WA",
+      "zip": "98074",
+      "vendor_avg_rating": null,
+      "vendor_desc": "To live"
+    },
+    {
+      "vendor_id": "391",
+      "vendor_name": "Narang",
+      "vendor_image": "http://104.131.117.45/img/profile/vendor/vendor_95d46c614c6027077050d672016b08f6.png",
+      "address": "Chjdjxhgs,Cgjsuz",
+      "city": "Gidiid",
+      "state": "CA",
+      "zip": "145288",
+      "vendor_avg_rating": null,
+      "vendor_desc": "Ghudhshhsijd"
+    },
+    {
+      "vendor_id": "401",
+      "vendor_name": "Vendor vendor",
+      "vendor_image": "http://104.131.117.45/img/profile/vendor/vendor_43ef9fa18f252936bfd12213560fb2d3.png",
+      "address": "Vendor update,vendor update",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94110",
+      "vendor_avg_rating": null,
+      "vendor_desc": "Vendir update"
+    },
+    {
+      "vendor_id": "428",
+      "vendor_name": "Beauty pet spa",
+      "vendor_image": "http://104.131.117.45/img/profile/vendor/vendor_8a37f8aa467a3ade256c9970ce7bd98f.jpg",
+      "address": "50 Embarcadero ",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94103",
+      "vendor_avg_rating": null,
+      "vendor_desc": "We have been in business for 10 years and will pamper your loved pet like if they were our own. "
+    },
+    {
+      "vendor_id": "442",
+      "vendor_name": "demo",
+      "vendor_image": "",
+      "address": "demo street,demo street 2",
+      "city": "gur",
+      "state": "ID",
+      "zip": "122016",
+      "vendor_avg_rating": null,
+      "vendor_desc": "demo 1"
+    },
+    {
+      "vendor_id": "448",
+      "vendor_name": "Kate Test vendor",
+      "vendor_image": "http://104.131.117.45/img/profile/vendor/vendor_6efd0748f9bba67f46c85c87677927a1.png",
+      "address": "Pete John road,88838",
+      "city": "Greenville",
+      "state": "SC",
+      "zip": "29604",
+      "vendor_avg_rating": null,
+      "vendor_desc": "Test business information"
+    }
+  ]
+}

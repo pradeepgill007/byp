@@ -1,0 +1,88 @@
+<ion-navbar *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="title_color">My Profile</ion-title>
+</ion-navbar>
+<ion-content>
+
+    <ion-row no-padding>
+        <ion-col no-padding class="top_profile_bg"></ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col text-center class="my_profile_top my_profile_image_margin_minus70 position_relative">
+                <span class="my_profile_image_wrapper"><span>
+                    <img src="../../../img/default-profile-image.png"></span>
+                </span>
+            <button class="button button_globle edit_button" (click)="vendorEditProfile()">
+                <ion-icon name="md-create"></ion-icon>
+                <span>Edit</span>
+            </button>
+            <h1>Name</h1>
+            <h2>Address</h2>
+        </ion-col>
+    </ion-row>
+
+    <ion-row text-center no-padding>
+        <ion-col no-padding>
+            <ion-icon name="md-paw" class="paw_active"></ion-icon>
+            <ion-icon name="md-paw" class="paw_active"></ion-icon>
+            <ion-icon name="md-paw" class="paw_active"></ion-icon>
+            <ion-icon name="md-paw" class="paw_inactive"></ion-icon>
+            <ion-icon name="md-paw" class="paw_inactive"></ion-icon>
+        </ion-col>
+    </ion-row>
+
+    <ion-row text-center no-padding>
+        <ion-col no-padding class="my_profile_top">
+            <p>Description</p>
+        </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col text-center>
+            <div class="services_categories">service Name <span>|</span> service Name</div>
+        </ion-col>
+    </ion-row>
+
+    <ion-row class="book_an_appointment_text">
+        <ion-col>Service info</ion-col>
+    </ion-row>
+
+
+    <ion-row no-padding>
+        <ion-col no-padding>
+            <ion-list class="no_margin_bottom no_margin_top_minus1">
+                <ion-item class="vendor_detail_wrapper">
+                    <ion-thumbnail item-left>
+                        <img src="../../../img/default_pet_image.png">
+                    </ion-thumbnail>
+                    <h2>
+                        <ion-row no-padding>
+                            <ion-col no-padding>Service name</ion-col>
+                            <ion-col no-padding text-right class="price_color">$55</ion-col>
+                        </ion-row>
+                    </h2>
+                    <p>Lorem Ipsum is simply dummy text </p>
+                </ion-item>
+            </ion-list>
+            <ion-list class="no_margin_bottom no_margin_top_minus1">
+                <ion-item class="vendor_detail_wrapper">
+                    <ion-thumbnail item-left>
+                        <img src="../../../img/default_pet_image.png">
+                    </ion-thumbnail>
+                    <h2>
+                        <ion-row no-padding>
+                            <ion-col no-padding>Service name</ion-col>
+                            <ion-col no-padding text-right class="price_color">$55</ion-col>
+                        </ion-row>
+                    </h2>
+                    <p>Lorem Ipsum is simply dummy text </p>
+                </ion-item>
+            </ion-list>
+        </ion-col>
+    </ion-row>
+
+
+</ion-content>

@@ -1,0 +1,40 @@
+.search_wrapper {
+  background: #2c6596;
+  ion-input {
+    background: #fff;
+    padding-left: 32px;
+    border-radius: 4px;
+  }
+  .item input[type="text"] {
+    color: #444;
+    font-size: 14px;
+  }
+  .ion-ios-search, .ion-md-search {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 5;
+    font-size: 24px;
+    color: #ccc;
+  }
+}
+
+.vendor_detail_list {
+  .item-inner {
+    border-bottom: 0px;
+  }
+  .input-wrapper {
+    h2 {
+      font-size: 18px;
+      color: #337ab7;
+      font-family: 'Open Sans', sans-serif;
+    }
+    p {
+      color: #444;
+      font-size: 16px;
+    }
+    p.vendor_description {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+<ion-navbar *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="title_color">Search</ion-title>
+</ion-navbar>
+<ion-content scroll="false">
+    <ion-row class="search_wrapper">
+        <ion-col class="position_relative">
+            <ion-icon name="search"></ion-icon>
+            <form (ngSubmit)="getVendorList()">
+            <ion-input type="text" placeholder="Search city or zip code" [(ngModel)]="searchKeyword"></ion-input>
+            </form>
+        </ion-col>
+    </ion-row>
+    <!--<button block (click)="getVendorList()">Search</button>-->
+    <div *ngFor="#vendor of vendors" class="border_bottom_1px">
+        <ion-item (click)="goToDetail(vendor.vendor_id)" class="vendor_detail_list">
+            <ion-avatar item-left>
+                <img src="{{vendor.vendor_image}}">
+            </ion-avatar>
+            <h2>{{vendor.vendor_name}}</h2>
+            <p>{{vendor.city}}, {{vendor.state}}</p>
+            <p class="vendor_description">{{vendor.vendor_desc}}</p>
+        </ion-item>
+    </div>
+</ion-content>

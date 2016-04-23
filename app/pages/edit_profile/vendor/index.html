@@ -1,0 +1,115 @@
+<ion-navbar *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="title_color">Edit Profile</ion-title>
+</ion-navbar>
+
+<ion-content>
+    <ion-row no-padding>
+        <ion-col no-padding class="top_profile_bg"></ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col text-center class="my_profile_top my_profile_image_margin_minus70 position_relative">
+                <span class="my_profile_image_wrapper"><span>
+                    <img src="../../../img/default-profile-image.png"></span>
+                </span>
+            <h1>Name</h1>
+            <h2>Address</h2>
+        </ion-col>
+    </ion-row>
+
+    <ion-row no-padding class="position_relative">
+        <ion-col no-padding>
+            <button clear class="left_slide_button" (click)="slidePrev()">
+                <ion-icon name="arrow-back"></ion-icon>
+            </button>
+            <button clear class="right_slide_button" (click)="slideNext()">
+                <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+        </ion-col>
+    </ion-row>
+
+    <ion-row no-padding class="slider_slide_up">
+        <ion-col no-padding>
+            <ion-slides class="slider_wrapper">
+                <ion-slide>
+                    <h2>Personal Information</h2>
+                    <ion-row>
+                        <ion-col>
+                            <form class="wrapper_form wrapper_form_white_bg">
+                                <ion-list>
+                                    <ion-item>
+                                        <ion-input type="text" placeholder="First name" [(ngModel)]="name"></ion-input>
+                                    </ion-item>
+                                    <ion-item>
+                                        <ion-input type="text" placeholder="last name"
+                                                   [(ngModel)]="last_name"></ion-input>
+                                    </ion-item>
+                                    <ion-item>
+                                        <ion-input type="tel" maxlenght="10" placeholder="Phone number"
+                                                   [(ngModel)]="phone_number"></ion-input>
+                                    </ion-item>
+                                </ion-list>
+                                <button class="button button-block login_button">Save</button>
+                            </form>
+                        </ion-col>
+                    </ion-row>
+                </ion-slide>
+
+                <ion-slide>
+                    <h2>Payment</h2>
+                    <ion-row>
+                        <ion-col>
+                            <form class="wrapper_form wrapper_form_white_bg">
+                                <ion-list>
+                                    <ion-item>
+                                        <ion-input type="text" placeholder="Tax(ID)" [(ngModel)]="tax"></ion-input>
+                                    </ion-item>
+                                    <ion-item>
+                                        <ion-input type="tel" placeholder="State tax number"
+                                                   [(ngModel)]="tel"></ion-input>
+                                    </ion-item>
+                                    <ion-item>
+                                        <ion-input type="text" placeholder="Bank name" [(ngModel)]="bank"></ion-input>
+                                    </ion-item>
+                                    <ion-item>
+                                        <ion-input type="text" placeholder="Bank routing number"
+                                                   [(ngModel)]="bank_routing"></ion-input>
+                                    </ion-item>
+                                    <ion-item>
+                                        <ion-input type="text" placeholder="Bank account number"
+                                                   [(ngModel)]="Bank_account_number"></ion-input>
+                                    </ion-item>
+                                </ion-list>
+                                <button class="button button-block login_button">Save</button>
+                            </form>
+                        </ion-col>
+                    </ion-row>
+                </ion-slide>
+
+                <ion-slide>
+                    <h2>Change Password</h2>
+                    <ion-row>
+                        <ion-col>
+                            <form class="wrapper_form wrapper_form_white_bg">
+                                <ion-list>
+                                    <ion-item>
+                                        <ion-input type="password" placeholder="password"
+                                                   [(ngModel)]="password"></ion-input>
+                                    </ion-item>
+                                    <ion-item>
+                                        <ion-input type="password" placeholder="confirm password"
+                                                   [(ngModel)]="confirm_password"></ion-input>
+                                    </ion-item>
+                                </ion-list>
+                                <button class="button button-block login_button">Save</button>
+                            </form>
+                        </ion-col>
+                    </ion-row>
+                </ion-slide>
+            </ion-slides>
+        </ion-col>
+    </ion-row>
+</ion-content>
+

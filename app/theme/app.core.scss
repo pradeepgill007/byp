@@ -1,0 +1,267 @@
+// http://ionicframework.com/docs/v2/theming/
+// App Shared Imports
+// --------------------------------------------------
+// These are the imports which make up the design of this app.
+// By default each design mode includes these shared imports.
+// App Shared Sass variables belong in app.variables.scss.
+@import "../pages/login/login";
+@import "../pages/search/search";
+@import "../pages/user_vendor/user_vendor";
+@import "../pages/my_profile/user/my_profile";
+@import "../pages/my_profile/vendor/my_profile";
+@import "../pages/edit_profile/user/edit_profile";
+@import "../pages/vendor_services/service";
+@import "../pages/service_detail/service_detail";
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.border {
+  border: 5px solid red !important;
+  background: green;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.no_margin_bottom {
+  margin-bottom: 0px !important;
+}
+
+.no_margin_top {
+  margin-top: 0px !important;
+}
+
+.no_margin_top_minus1 {
+  margin-top: -1px !important;
+}
+
+.position_relative {
+  position: relative;
+}
+
+.title_color {
+  .toolbar-title {
+    color: #337ab7;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.no_border_bottom {
+  border-bottom: 0px !important;
+}
+
+.border_bottom_1px {
+  border-bottom: 1px solid #cccccc;
+}
+
+.height50Pre {
+  height: 50%;
+}
+
+.logo {
+  img {
+    width: 180px;
+    margin: 10px 0;
+  }
+}
+
+.wrapper_form {
+  .item-input {
+    margin-bottom: 15px;
+    border-color: #ccc;
+    border-radius: 4px;
+    background: #fff;
+  }
+}
+
+.wrapper_form_white_bg {
+  ion-list > .item:first-child {
+    border-top: 0px;
+  }
+  .item-input {
+    border: 1px solid #cccccc !important;
+    .item-inner {
+      border-bottom: 0px;
+    }
+  }
+}
+
+.login_button {
+  color: #fff;
+  min-height: 40px;
+  line-height: 35px;
+  text-transform: uppercase;
+  background: #5cb85c;
+}
+
+.login_signup_main_bg {
+  background: url("../../img/mainBg.jpg");
+  background-size: 100% 100%;
+}
+
+.top_profile_bg {
+  height: 150px;
+  background: url(../../img/profile-topBg.jpg);
+  background-size: 100% 100%;
+}
+
+.my_profile_top {
+  h1 {
+    color: #444;
+    font-size: 24px;
+    margin-top: 6px;
+    margin-bottom: 4px;
+  }
+  h2 {
+    color: #444;
+    font-size: 18px;
+    margin-top: 0;
+  }
+  p {
+    color: #444;
+    font-size: 14px;
+  }
+}
+
+.my_profile_image_margin_minus70 {
+  margin-top: -70px;
+}
+
+.my_profile_image_wrapper {
+  height: 140px;
+  width: 140px;
+  padding: 6px;
+  display: inline-block;
+  border: 1px solid #59564f;
+  @include border-radius(50%);
+  span {
+    height: 100%;
+    width: 100%;
+    padding: 6px;
+    display: inline-block;
+    background: rgba(77, 85, 94, .5);
+    border: 1px solid #c3c3c2;
+    @include border-radius(50%);
+    img {
+      height: 100%;
+      width: 100%;
+      border: 1px solid #c3c3c2;
+      @include border-radius(50%);
+    }
+  }
+}
+
+.button_globle {
+  color: #fff;
+  min-height: 40px;
+  line-height: 35px;
+  text-transform: uppercase;
+  background: #5cb85c;
+}
+
+.book_an_appointment_text {
+  font-size: 18px;
+  color: #fff;
+  background: #2c6596;
+}
+
+.border_image_outline {
+  border: 1px solid #ccc;
+  @include border-radius(50%);
+}
+
+.edit_button {
+  position: absolute;
+  right: 0px;
+  top: 80px;
+}
+
+.paw_inactive {
+  color: #ccc;
+}
+
+.paw_active {
+  color: #f99c37;
+}
+
+.right_pull {
+  float: right;
+}
+
+.left_pull {
+  float: left;
+}
+
+.left_slide_button {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  ion-icon {
+    font-size: 38px;
+    color: #444;
+  }
+}
+
+.right_slide_button {
+  @extend .left_slide_button;
+  left: auto;
+  right: 0px;
+}
+
+.slider_slide_up {
+  margin-top: -6px;
+}
+
+.slider_wrapper {
+  h2 {
+    font-size: 22px;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 24px;
+  }
+}
+
+.pet_information_wrapper {
+  h2 {
+    color: #337ab7;
+    font-size: 16px;
+    margin-bottom: 0px;
+    span {
+      color: #5c5c5c;
+      font-weight: bold;
+    }
+  }
+  p {
+    color: #5c5c5c;
+    font-size: 14px;
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+.steps_color {
+  font-size: 16px;
+  color: #a2a2a1;
+  &.active {
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+.steps_line {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  height: 1px;
+  background: #fff;
+}

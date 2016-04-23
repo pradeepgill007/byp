@@ -1,0 +1,22 @@
+<ion-navbar *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="title_color">Login</ion-title>
+</ion-navbar>
+<ion-content>
+    <ion-row no-padding center class="height50Pre user_background">
+        <ion-col no-padding text-center>
+            <span class="login_icon" (click)="continueAs('user')">  <ion-icon name="person"></ion-icon></span>
+            <br>
+            <button class="continue_text" (click)="continueAs('user')">Continue as User</button>
+        </ion-col>
+    </ion-row>
+    <ion-row no-padding center class="height50Pre vendor_background">
+        <ion-col no-padding text-center>
+            <span class="login_icon" (click)="continueAs('vendor')"><ion-icon name="md-create"></ion-icon></span>
+            <br>
+            <button class="continue_text" (click)="continueAs('vendor')">Continue as vendor</button>
+        </ion-col>
+    </ion-row>
+</ion-content>

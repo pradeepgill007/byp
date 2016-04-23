@@ -1,0 +1,53 @@
+<ion-navbar *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="title_color">My Profile</ion-title>
+</ion-navbar>
+<ion-content>
+
+    <ion-row no-padding>
+        <ion-col no-padding class="top_profile_bg"></ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col text-center class="my_profile_top my_profile_image_margin_minus70 position_relative">
+                <span class="my_profile_image_wrapper"><span>
+                    <img src="../../../img/default-profile-image.png"></span>
+                </span>
+            <button class="button button_globle edit_button" (click)="userEditProfile()">
+                <ion-icon name="md-create"></ion-icon>
+                <span>Edit</span>
+            </button>
+            <h1>Name</h1>
+            <h2>Address</h2>
+            <p>Description</p>
+        </ion-col>
+    </ion-row>
+
+    <ion-row class="book_an_appointment_text">
+        <ion-col>Pet info</ion-col>
+    </ion-row>
+
+    <ion-list class="no_margin_bottom">
+        <ion-item class="pet_information_wrapper">
+            <ion-avatar item-left>
+                <img src="../../../img/default_pet_image.png" class="border_image_outline">
+            </ion-avatar>
+            <h2>Pet Name <span>name</span></h2>
+            <p><span>Breed: </span>breed</p>
+            <p><span>Birthday: </span>dob</p>
+        </ion-item>
+    </ion-list>
+    <ion-list class="no_margin_bottom no_margin_top_minus1">
+        <ion-item class="pet_information_wrapper">
+            <ion-avatar item-left>
+                <img src="../../../img/default_pet_image.png" class="border_image_outline">
+            </ion-avatar>
+            <h2>Pet Name <span>name</span></h2>
+            <p><span>Breed: </span>breed</p>
+            <p><span>Birthday: </span>dob</p>
+        </ion-item>
+    </ion-list>
+
+</ion-content>

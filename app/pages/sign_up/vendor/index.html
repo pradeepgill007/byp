@@ -1,0 +1,40 @@
+<ion-navbar *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="title_color">Vendor SignUp</ion-title>
+</ion-navbar>
+
+<ion-content padding class="login_signup_main_bg">
+    <ion-row text-center>
+        <ion-col class="logo">
+            <img src="../../img/logo.png">
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col text-right class="steps_color active">1</ion-col>
+        <ion-col class="position_relative"><span class="steps_line"></span></ion-col>
+        <ion-col col-10 text-center class="steps_color">2</ion-col>
+        <ion-col class="position_relative"><span class="steps_line"></span></ion-col>
+        <ion-col text-left class="steps_color">3</ion-col>
+    </ion-row>
+    <form class="wrapper_form">
+        <ion-list>
+            <ion-item>
+                <ion-input type="text" placeholder="Email" [(ngModel)]="email"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="password" placeholder="password" [(ngModel)]="password"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="password" placeholder="confirm password" [(ngModel)]="confirm_password"></ion-input>
+            </ion-item>
+        </ion-list>
+        <ion-row>
+            <ion-col>
+                <button class="button button-block login_button" (click)="vendorSignUp()">Sign Up</button>
+            </ion-col>
+        </ion-row>
+
+    </form>
+</ion-content>

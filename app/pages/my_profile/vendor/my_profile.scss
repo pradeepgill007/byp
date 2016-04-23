@@ -1,0 +1,28 @@
+.services_categories {
+  color: #5b95c5;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 10px;
+  //&:last-child {
+  //  span {
+  //    display: none;
+  //  }
+  //}
+}
+
+.vendor_detail_wrapper {
+      h2{
+        font-size: 18px;
+        color: #337ab7;
+        font-family: 'Open Sans', sans-serif;
+      }
+      p {
+        font-size: 16px;
+        color: #444;
+        white-space:normal;
+      }
+}
+.price_color {
+  font-weight: bold;
+  color: #000;
+}
