@@ -14,7 +14,7 @@
         </ion-col>
     </ion-row>
     <!--<button block (click)="getVendorList()">Search</button>-->
-    <div *ngFor="#vendor of vendors" class="border_bottom_1px">
+    <div *ngFor="#vendor of vendors" class="border_bottom_1px animated bounceInLeft">
         <ion-item (click)="goToDetail(vendor.vendor_id)" class="vendor_detail_list">
             <ion-avatar item-left>
                 <img src="{{vendor.vendor_image}}">

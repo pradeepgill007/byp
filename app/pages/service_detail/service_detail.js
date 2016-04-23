@@ -8,14 +8,36 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var ionic_angular_1 = require("ionic-angular");
-var serviceDetail = (function () {
-    function serviceDetail() {
+var ModalsContentPage = (function () {
+    function ModalsContentPage(viewCtrl) {
+        this.viewCtrl = viewCtrl;
     }
+    ModalsContentPage.prototype.close = function () {
+        this.viewCtrl.dismiss();
+    };
+    ModalsContentPage = __decorate([
+        ionic_angular_1.Page({
+            templateUrl: 'build/pages/service_detail/add_service.html'
+        }), 
+        __metadata('design:paramtypes', [ionic_angular_1.ViewController])
+    ], ModalsContentPage);
+    return ModalsContentPage;
+})();
+exports.ModalsContentPage = ModalsContentPage;
+var serviceDetail = (function () {
+    function serviceDetail(nav) {
+        this.nav = nav;
+        this.nav = nav;
+    }
+    serviceDetail.prototype.showModal = function () {
+        var modal = ionic_angular_1.Modal.create(ModalsContentPage);
+        this.nav.present(modal);
+    };
     serviceDetail = __decorate([
         ionic_angular_1.Page({
             templateUrl: "build/pages/service_detail/index.html"
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [ionic_angular_1.NavController])
     ], serviceDetail);
     return serviceDetail;
 })();

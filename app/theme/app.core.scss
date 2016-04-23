@@ -12,6 +12,7 @@
 @import "../pages/edit_profile/user/edit_profile";
 @import "../pages/vendor_services/service";
 @import "../pages/service_detail/service_detail";
+@import "animation";
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -247,6 +248,7 @@ body {
     }
   }
 }
+
 .steps_color {
   font-size: 16px;
   color: #a2a2a1;
