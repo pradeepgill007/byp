@@ -1,14 +1,11 @@
 import 'es6-shim';
-import {bootstrap}    from 'angular2/platform/browser';
-import {App, IonicApp, Platform,Page,NavParams,ViewController} from 'ionic-angular';
+import {App, IonicApp, Platform,Page} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {Component} from 'angular2/core';
-import {RouteConfig, ROUTER_DIRECTIVES,Location,ROUTER_PROVIDERS,ROUTER_BINDINGS} from 'angular2/router';
 
 import {Search} from './pages/search/search';
 import {login} from './pages/login/login';
 import {vendorService} from './pages/vendor_services/service';
-
 import {myProfileUser} from './pages/my_profile/user/my_profile';
 import {myProfileVendor} from './pages/my_profile/vendor/my_profile';
 

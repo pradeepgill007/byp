@@ -12,9 +12,9 @@ import {Http, HTTP_PROVIDERS} from 'angular2/http';
 })
 export class Search {
     public vendors;
-    public searchKeyword = '';
+    public searchKeyword: string = '';
 
-    constructor(private search:searchService, private nav:NavController, private http:Http) {
+    constructor(private search: searchService, private nav: NavController, private http:Http) {
     }
 
     getVendorList() {
